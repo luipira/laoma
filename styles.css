@@ -8,23 +8,42 @@ body {
 
 #gameArea {
     position: relative;
-    width: 500px;
-    height: 500px;
+    width: 90vw;
+    height: 90vw;
+    max-width: 500px;
+    max-height: 500px;
     border: 1px solid #000;
     margin: 0 auto;
     background-color: #f0f0f0;
 }
 
 .snake {
-    width: 20px;
-    height: 20px;
+    width: 4vw;
+    height: 4vw;
+    max-width: 20px;
+    max-height: 20px;
     background-color: green;
     position: absolute;
 }
 
 .food {
-    width: 20px;
-    height: 20px;
+    width: 4vw;
+    height: 4vw;
+    max-width: 20px;
+    max-height: 20px;
     background-color: red;
     position: absolute;
+}
+
+#controls {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    max-width: 300px;
+    margin: 20px auto;
+}
+
+#controls button {
+    font-size: 1.5em;
+    padding: 10px;
 }
