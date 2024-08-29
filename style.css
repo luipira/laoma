@@ -170,7 +170,7 @@ body {
 }
 
 .menu li a:hover{
-	color: #FFC0CB;
+	color: #d40227;
 	transition: all .3s;
 }
 
@@ -178,7 +178,7 @@ body {
 
 .submenu{
 	position: absolute;
-	background: #C71585;
+	background:#030000;
 	width: 120%;
 	visibility: hidden;
 	opacity: 0;
@@ -301,7 +301,7 @@ h1{
 
 }
 .izqyder{
-    background-color: #5D9C59;
+    background-color: #030000;
 }
 .contenedor {
     position: relative;
@@ -331,10 +331,10 @@ h1{
 }
 h5{
     font-size: 14px;
-    color: #FFC0CB;
+    color: #fff;
 }
 footer {
-   background-color: #C71585;
+   background-color: #030000;
     padding: 5px;
     text-align: center;
     position: fixed;
@@ -349,8 +349,8 @@ footer {
 .boton-enlace {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #FFC0CB; /* Color de fondo del botón (puedes cambiarlo) */
-    color: #C71585; /* Color del texto en el botón (puedes cambiarlo) */
+    background-color: #fff; /* Color de fondo del botón (puedes cambiarlo) */
+    color: #030000; /* Color del texto en el botón (puedes cambiarlo) */
     text-decoration: none;
     border: none;
     border-radius: 5px; /* Radio de borde del botón (puedes cambiarlo) */
@@ -358,8 +358,8 @@ footer {
 }
 
 .boton-enlace:hover {
-    background-color: #C71585; /* Color de fondo del botón al pasar el cursor (puedes cambiarlo) */
-    color: #FFC0CB;
+    background-color: #d40227; /* Color de fondo del botón al pasar el cursor (puedes cambiarlo) */
+    color: #fff;
 }
 .productosul{
 	color: #333
