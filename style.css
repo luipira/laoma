@@ -28,7 +28,7 @@ body {
 }
 .centrarlogo{
             text-align: center; /* Centra horizontalmente */
-	    background-color: #FFC0CB;
+	    background-color: #6e0417;
         }
  .container {
     max-width: 800px;
@@ -86,7 +86,7 @@ body {
 .texto {
 	text-align: center; /* Centrar el texto en el contenedor */
     font-size: 24px;
-    color: #333;
+    color: #fff;
  
 
 }
@@ -148,7 +148,7 @@ body {
 
 .navegacion{
 	
-	background-color:#C71585;
+	background-color:#030000;
 	text-align: left;
 }
 
