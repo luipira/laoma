@@ -179,7 +179,7 @@ body {
 .submenu{
 	position: absolute;
 	background:#030000;
-	width: 120%;
+	width: 150%;
 	visibility: hidden;
 	opacity: 0;
 	transition: opacity 1.5s;
