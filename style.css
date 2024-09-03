@@ -29,7 +29,7 @@ body {
 .centrarlogo{
             text-align: center; /* Centra horizontalmente */
 	    background-color: #6e0417;
-	    max-width: 500px
+	   display: inline-block;
         }
  .container {
     max-width: 800px;
