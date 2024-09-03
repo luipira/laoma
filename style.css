@@ -54,7 +54,6 @@ body {
 
 /*carro*/
 .carro {
-	position: absolute;
         right: 0; /* Alinea la imagen al borde derecho */
         width: 50px; /* Ajusta el tamaño de la imagen */
 }
