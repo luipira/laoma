@@ -13,7 +13,10 @@ body {
 /*carro*/
 .carro {
          background-color: #030000;
-         right: 0; /* Alinea la imagen al borde derecho */
+         padding: 5px;
+         text-align: right;
+         position: fixed;
+         bottom: 0;
          width: 50px; /* Ajusta el tamaño de la imagen */
 }
 /*logo*/
