@@ -24,9 +24,7 @@ body {
 }
 
 .logo{
-	 display: block;
-         width: auto;
-         height: auto; 
+	 
 }
 .centrarlogo{
             text-align: center; /* Centra horizontalmente */
