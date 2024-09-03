@@ -25,11 +25,13 @@ body {
 
 /*logo*/
 .logo{
-	 
+	 top:20%;
+	 width:100%;
 }
 .centrarlogo{
             text-align: center; /* Centra horizontalmente */
 	    background-color: #6e0417;
+	    top: 20%;
         }
 /*menu*/
 .navegacion{
