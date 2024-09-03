@@ -10,6 +10,12 @@ body {
     position: relative; /* Asegura que el cuerpo tenga una posición relativa */
     font-family: 'Oswald', sans-serif;
 }
+/*carro*/
+.carro {
+         background-color: #030000;
+         right: 0; /* Alinea la imagen al borde derecho */
+         width: 50px; /* Ajusta el tamaño de la imagen */
+}
 /*logo*/
 .logo{
 	 
@@ -52,11 +58,7 @@ body {
 	opacity: 1;
 }
 
-/*carro*/
-.carro {
-        right: 0; /* Alinea la imagen al borde derecho */
-        width: 50px; /* Ajusta el tamaño de la imagen */
-}
+
 
 
  .container {
