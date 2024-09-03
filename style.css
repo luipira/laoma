@@ -22,6 +22,8 @@ body {
          text-align: center;
         
 }
+.carro :hover{
+	transition: all .3s;
 /*logo*/
 .logo{
 	 
