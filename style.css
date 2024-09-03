@@ -121,6 +121,9 @@ button#purchase-button {
 button#purchase-button:hover {
     background-color: #007B9A;
 }
+h2{
+	color: #fff;
+}
 /*footer*/
 .divh5{
 	background-color: #030000;
