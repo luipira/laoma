@@ -10,6 +10,9 @@ body {
     position: relative; /* Asegura que el cuerpo tenga una posición relativa */
     font-family: 'Oswald', sans-serif;
 }
+p {
+	color: #fff;
+}
 /*carro*/
 .carro {
          top: 0;
