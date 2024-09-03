@@ -12,12 +12,15 @@ body {
 }
 /*carro*/
 .carro {
-         background-color: #030000;
-         padding: 5px;
-         text-align: right;
          position: fixed;
-         bottom: 0;
-         width: 50px; /* Ajusta el tamaño de la imagen */
+         top: 0;
+         right: 0;
+         width: 100%;
+         padding: 10px 0;
+         z-index: 1000;
+	 background-color: #030000;
+         text-align: right;
+        
 }
 /*logo*/
 .logo{
