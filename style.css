@@ -13,6 +13,9 @@ body {
 p {
 	color: #fff;
 }
+h1{ 
+	color: #fff
+}
 /*carro*/
 .carro {
          top: 0;
@@ -120,7 +123,7 @@ img{
 .title{
     font-size: 30px;
     font-weight: 500;
-    color: var(--color1);
+    color: #fff;
     margin-bottom: 30px;
 }
 
@@ -184,7 +187,7 @@ img{
 
 .btn-default{
     background-color: var(--color2);
-    color: var(--color1);
+    color: red;
 }
 
 .btn-default:hover{
