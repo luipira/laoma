@@ -146,7 +146,6 @@ footer {
     width: 100%;
 }
 /*carro*/
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
 :root{
     --color1: #135337;
     --color2:#9CCB9E;
@@ -161,10 +160,6 @@ footer {
     box-sizing: border-box;
 }
 
-body{
-    font-family: 'Montserrat', sans-serif;
-    background-color: var(--fondo);
-}
 
 .container{
     max-width: 1120px;
