@@ -147,9 +147,9 @@ footer {
 }
 /*carro*/
 :root{
-    --color1: #135337;
-    --color2:#9CCB9E;
-    --color3: #30303F;
+    --color1: #fff;
+    --color2:#030000;
+    --color3: #e53935;
     --fondo: #F5F7F9;
     --border: #C9C6C6;
 }
