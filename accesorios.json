@@ -1,0 +1,40 @@
+[
+  
+  {
+    "nombre": "Aros Emily",
+    "descripcion": "Aros realizados de arcilla, pintados a mano y barnizados.",
+    "precio": 1500,
+    "imagen": "img/arosemily.png"
+  },
+  {
+    "nombre": "Collar Chula",
+    "descripcion": "Collar realizado con tanza de alambre, mostacillas y perlas.",
+    "precio": 2000,
+    "imagen": "img/collarchula.png"
+  },
+  {
+    "nombre": "Pulseras Corazon Compartidas",
+    "descripcion": "Dúo pulseras con dije de corazon realizadas de hilo encerado rojo.",
+    "precio": 700,
+    "imagen": "img/pulserascorazoncompartidas.png"
+  },
+  {
+    "nombre": "Collar Happy",
+    "descripcion": "Collar realizado de mostacillas y dijes varios.",
+    "precio": 1000,
+    "imagen": "img/collarhappy.jpg"
+  },
+  {
+    "nombre": "Pulsera Arcoiris",
+    "descripcion": "Pulsera realizada de mostacillas y dijes.",
+    "precio": 500,
+    "imagen": "img/pulseraarcoiris.jpeg"
+  },
+  {
+    "nombre": "Aros Hojas",
+    "descripcion": "Aros realizados de alambre.",
+    "precio": 500,
+    "imagen": "img/Aroshoja.png"
+  }
+  
+]

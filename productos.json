@@ -1,0 +1,33 @@
+[
+  
+  {
+    "nombre": "Mate Vibrando Positivo",  
+    "descripcion": "Mate de Madera pintado a mano y barnizado.", 
+    "precio": 3500,
+    "imagen": "img/matevibrando.jpeg"
+  },
+  {
+    "nombre": "Mate Stitch",
+    "descripcion": "Mate de madera pintado a mano y barnizado.",
+    "precio": 3500,
+    "imagen": "img/matestitch.jpeg"
+  },
+  {
+    "nombre": "Mate Mandala",
+    "descripcion": "Mate de Madera pintado a mano y barnizado.",
+    "precio": 3500,
+    "imagen": "img/matemandala.jpeg"
+  },
+  {
+    "nombre": "Mate Be Happy",
+    "descripcion": "Mate de madera pintado a mano y barnizado.",
+    "precio": 3500,
+    "imagen": "img/matebehappy.jpeg"
+  },
+  {
+    "nombre": "Mate Ojo Turco",
+    "descripcion": "Mate de madera pintado a mano y barnizado.",
+    "precio": 3500,
+    "imagen": "img/mateojoturco.jpeg"
+  }
+]
