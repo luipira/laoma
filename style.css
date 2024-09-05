@@ -13,6 +13,9 @@ body {
 p {
 	color: #fff;
 }
+h1 {
+	color: #fff;
+	text-align: center;
 
 /*carro*/
 .carro {
