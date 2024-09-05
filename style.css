@@ -81,9 +81,8 @@ h1 {
     align-items: center;
     background-color: #f9f9f9; /* Color de fondo de la franja */
     border: 2px solid #ddd; /* Borde alrededor del producto */
-    border-radius: 8px; /* Esquinas redondeadas */
     margin-bottom: 20px; /* Espacio entre franjas */
-    padding: 25px;
+    padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 span {
