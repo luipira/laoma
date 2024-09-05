@@ -58,12 +58,13 @@
 
    
 <body>
+<div class="carrito">
     <h1>Carrito de Compras</h1>
     <div id="cart-items"></div>
     <h3>Total: $<span id="total-price">0</span></h3>
     <button onclick="finalizePurchase()">Finalizar Compra</button>
     <a href="index.html">Volver a la tienda</a>
-
+</div>
     <script>
         function loadCart() {
             let cart = JSON.parse(localStorage.getItem('cart')) || [];
