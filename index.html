@@ -11,10 +11,6 @@
 <link rel="stylesheet" href="style.css">
 <link rel="icon" href="logofondoins.png">
 <title>La Oma - Resto Bar</title>
-	<style>
-        .product { margin-bottom: 15px; }
-        .product button { margin-top: 5px; }
-    </style>
 </head>
 
 <body>
@@ -54,41 +50,7 @@
 
   
 <h1 class="col-md-12 text-white text-center">La Oma Peña y Resto Bar</h1>
-
-	  <h1>Productos</h1>
-    <div id="product-list">
-        <div class="product">
-            <span>Producto 1 - $10</span>
-            <button onclick="addToCart('Producto 1', 10)">Agregar al carrito</button>
-        </div>
-        <div class="product">
-            <span>Producto 2 - $20</span>
-            <button onclick="addToCart('Producto 2', 20)">Agregar al carrito</button>
-        </div>
-        <div class="product">
-            <span>Producto 3 - $30</span>
-            <button onclick="addToCart('Producto 3', 30)">Agregar al carrito</button>
-        </div>
-    </div>
-    <a href="cart.html">Ver carrito</a>
-
-    <script>
-        function addToCart(name, price) {
-            let cart = JSON.parse(localStorage.getItem('cart')) || [];
-            let item = cart.find(item => item.name === name);
-
-            if (item) {
-                item.quantity += 1;
-            } else {
-                cart.push({ name, price, quantity: 1 });
-            }
-
-            localStorage.setItem('cart', JSON.stringify(cart));
-
-            // Mostrar mensaje de éxito
-            alert('Producto agregado al carrito');
-        }
-    </script>
+	
 </body>
 <br>
   <footer>
