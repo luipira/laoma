@@ -14,16 +14,6 @@
 	<style>
         .product { margin-bottom: 15px; }
         .product button { margin-top: 5px; }
-        #notification {
-            display: none;
-            position: fixed;
-            bottom: 10px;
-            right: 10px;
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px;
-            border-radius: 5px;
-        }
     </style>
 </head>
 
@@ -65,7 +55,7 @@
   
 <h1 class="col-md-12 text-white text-center">La Oma Peña y Resto Bar</h1>
 
-	 <h1>Productos</h1>
+	  <h1>Productos</h1>
     <div id="product-list">
         <div class="product">
             <span>Producto 1 - $10</span>
@@ -82,8 +72,6 @@
     </div>
     <a href="cart.html">Ver carrito</a>
 
-    <div id="notification">Producto agregado al carrito</div>
-
     <script>
         function addToCart(name, price) {
             let cart = JSON.parse(localStorage.getItem('cart')) || [];
@@ -97,12 +85,8 @@
 
             localStorage.setItem('cart', JSON.stringify(cart));
 
-            // Mostrar mensaje estilizado
-            let notification = document.getElementById('notification');
-            notification.style.display = 'block';
-            setTimeout(() => {
-                notification.style.display = 'none';
-            }, 2000);
+            // Mostrar mensaje de éxito
+            alert('Producto agregado al carrito');
         }
     </script>
 </body>
