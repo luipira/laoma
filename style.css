@@ -91,5 +91,6 @@ footer {
             padding: 10px;
             box-sizing: border-box;
             text-align: center;
+	    position: fixed;
 	
 }
