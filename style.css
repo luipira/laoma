@@ -78,6 +78,14 @@ h1 {
 /*productos*/
 span {
 	color: #fff
+	background-color: #f9f9f9; /* Color de fondo */
+    border: 2px solid #ddd; /* Borde */
+    border-radius: 8px; /* Esquinas redondeadas */
+    padding: 20px; /* Espacio interno */
+    width: calc(33% - 40px); /* Ajusta el ancho, considerando el gap */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center; /* Centrar el texto */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transición para efectos */
 }
 
 /*footer*/
