@@ -90,6 +90,12 @@ span {
 	flex: 1;
 	color: black;
 }
+.imagen {
+    max-width: 150px; /* Ajusta el tamaño de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 4px; /* Esquinas redondeadas en la imagen */
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+}
 /*footer*/
 
 h5{
