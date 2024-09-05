@@ -28,7 +28,7 @@ h1 {
          width: 100%;
          padding: 5px 0;
          z-index: 1000;
-	 background-color: #030000;
+	 background-color: red;
          text-align: center;
         
 }
@@ -39,7 +39,7 @@ h1 {
 }
 .centrarlogo{
             text-align: center; /* Centra horizontalmente */
-	    background-color: #6e0417;
+	    background-color: black;
 	    top: 40;
         }
 /*menu*/
@@ -89,5 +89,5 @@ footer {
     width: 100%;
     background-color: red;
     text-align: center;
-    padding: 10px;
+    padding: 5px;
 }
