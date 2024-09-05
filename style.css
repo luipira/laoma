@@ -97,9 +97,9 @@ span {
     margin-right: 20px; /* Espacio entre la imagen y el texto */
 }
 .carrito {
-    background-color: #f9f9f9; /* Color de fondo de la franja */
+    background-color: red; /* Color de fondo de la franja */
     text-align: center;
-    color: black;
+    color: #fff;
    padding: 20px;
 }
 /*footer*/
