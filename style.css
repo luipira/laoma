@@ -99,6 +99,8 @@ span {
 .carrito {
     background-color: #f9f9f9; /* Color de fondo de la franja */
     text-align: center;
+    color: black;
+   padding: 20px;
 }
 /*footer*/
 
