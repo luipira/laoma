@@ -47,7 +47,7 @@ h1 {
 .navegacion{
 	
 	background-color: black;
-	text-align: center;
+	text-align: left;
 }
 
 .navegacion ul{
@@ -75,7 +75,7 @@ h1 {
 
 .submenu{
 	position: absolute;
-	background: #C71585;
+	background: black;
 	width: 120%;
 	visibility: hidden;
 	opacity: 0;
@@ -91,7 +91,7 @@ h1 {
 	display: block;
 	padding: 5px;
 	color: #fff;
-	text-decoration: centre;
+	text-decoration: left;
 }
 
 .menu li:hover .submenu{
