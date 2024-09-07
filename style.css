@@ -46,8 +46,8 @@ h1 {
 /*menu*/
 .navegacion{
 	
-	background-color:#030000;
-	text-align: center;
+	background-color:#C71585;
+	text-align: left;
 }
 
 .navegacion ul{
@@ -62,13 +62,119 @@ h1 {
 
 .menu > li > a{
 	display: block;
-	padding: 25px 25px;
+	padding: 15px 20px;
 	color: #fff;
 	text-decoration: none;
 }
 
 .menu li a:hover{
-	color: #d40227;
+	color: #FFC0CB;
+	transition: all .3s;
+}
+
+/* Submenu*/
+
+.submenu{
+	position: absolute;
+	background: #C71585;
+	width: 120%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1.5s;
+	border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px; /* Radio de borde inferior izquierdo */
+        border-bottom-right-radius: 10px; /* Radio de borde inferior derecho */
+}
+
+.submenu li a{
+	display: block;
+	padding: 5px;
+	color: #fff;
+	text-decoration: centre;
+}
+
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}.navegacion{
+	
+	background-color:#C71585;
+	text-align: left;
+}
+
+.navegacion ul{
+	list-style: none;
+}
+
+
+.menu > li{
+	position: relative;
+	display: inline-block;
+}
+
+.menu > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.menu li a:hover{
+	color: #FFC0CB;
+	transition: all .3s;
+}
+
+/* Submenu*/
+
+.submenu{
+	position: absolute;
+	background: #C71585;
+	width: 120%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1.5s;
+	border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px; /* Radio de borde inferior izquierdo */
+        border-bottom-right-radius: 10px; /* Radio de borde inferior derecho */
+}
+
+.submenu li a{
+	display: block;
+	padding: 5px;
+	color: #fff;
+	text-decoration: centre;
+}
+
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}.navegacion{
+	
+	background-color:#C71585;
+	text-align: left;
+}
+
+.navegacion ul{
+	list-style: none;
+}
+
+
+.menu > li{
+	position: relative;
+	display: inline-block;
+}
+
+.menu > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.menu li a:hover{
+	color: #FFC0CB;
 	transition: all .3s;
 }
 
