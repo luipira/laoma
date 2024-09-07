@@ -104,12 +104,6 @@ h1 {
     }
 }
 
-/* Estilos para pantallas muy pequeñas (máximo de 480px) */
-@media (max-width: 480px) {
-    .menu a {
-        font-size: 12px; /* Tamaño de fuente aún más reducido para pantallas muy pequeñas */
-    }
-}
 /*productos*/
 .product {
 	display: flex;
