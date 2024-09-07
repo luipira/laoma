@@ -181,6 +181,7 @@ footer {
     width: 100%; /* Ocupa todo el ancho disponible */
     max-width: 100%; /* Asegura que no se exceda el ancho del contenedor */
     overflow: hidden;
+    z-index: 1; /* Asegura que el carrusel esté debajo del menú y submenú */
 }
 
 .carimages {
