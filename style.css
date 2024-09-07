@@ -84,6 +84,7 @@ h1 {
         border-top-right-radius: 0;
         border-bottom-left-radius: 10px; /* Radio de borde inferior izquierdo */
         border-bottom-right-radius: 10px; /* Radio de borde inferior derecho */
+	 z-index: 1000; /* Asegura que el submenú esté por encima de otros elementos */
 }
 
 .submenu li a{
