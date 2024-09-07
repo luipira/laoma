@@ -3,7 +3,7 @@ html, body {
     padding: 0;
 }
 body {
-    background-image: url('fondoo.png');
+    background-image: url('fondoo.svg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
