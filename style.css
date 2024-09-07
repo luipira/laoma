@@ -1,4 +1,4 @@
-@media (max-width: 768px)
+
 html, body {
     margin: 0;
     padding: 0;
@@ -44,7 +44,7 @@ h1 {
 	    top: 40;
         }
 /*menu*/
-.navegacion{
+@media (max-width: 768px)  .navegacion{
 	
 	background-color:#030000;
 	text-align: center;
