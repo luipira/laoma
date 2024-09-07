@@ -135,7 +135,7 @@ footer {
     height: auto; /* Mantiene la proporción de las imágenes */
 }
 
-button {
+.carousel button {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -146,11 +146,10 @@ button {
     cursor: pointer;
 }
 
-.prev {
+.carousel .prev {
     left: 10px;
 }
 
-.next {
+.carousel .next {
     right: 10px;
 }
-
