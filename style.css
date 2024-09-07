@@ -55,154 +55,83 @@ h1 {
 }
 
 
-.menu > li{
-	position: relative;
-	display: inline-block;
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 
-.menu > li > a{
-	display: block;
-	padding: 15px 20px;
-	color: #fff;
-	text-decoration: none;
+.menu > li {
+    position: relative; /* Asegura que el submenú se posicione relativo a su elemento padre */
+    margin-right: 20px;
 }
 
-.menu li a:hover{
-	color: #FFC0CB;
-	transition: all .3s;
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
 }
 
-/* Submenu*/
-
-.submenu{
-	position: absolute;
-	background: #C71585;
-	width: 120%;
-	visibility: hidden;
-	opacity: 0;
-	transition: opacity 1.5s;
-	border-top-left-radius: 0;
-        border-top-right-radius: 0;
-        border-bottom-left-radius: 10px; /* Radio de borde inferior izquierdo */
-        border-bottom-right-radius: 10px; /* Radio de borde inferior derecho */
+.menu a:hover {
+    background-color: #575757;
 }
 
-.submenu li a{
-	display: block;
-	padding: 5px;
-	color: #fff;
-	text-decoration: centre;
+/* Estilos para el submenú */
+.submenu {
+    display: none; /* Oculta el submenú por defecto */
+    position: absolute; /* Posiciona el submenú en relación a su elemento padre */
+    top: 100%; /* Coloca el submenú debajo del elemento principal */
+    left: 0;
+    background-color: #333;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1000; /* Asegura que el submenú esté por encima de otros elementos */
 }
 
-.menu li:hover .submenu{
-	visibility: visible;
-	opacity: 1;
-}.navegacion{
-	
-	background-color:#C71585;
-	text-align: left;
+.submenu li {
+    margin: 0;
 }
 
-.navegacion ul{
-	list-style: none;
+.submenu a {
+    padding: 10px;
+    display: block;
 }
 
-
-.menu > li{
-	position: relative;
-	display: inline-block;
+.submenu a:hover {
+    background-color: #575757;
 }
 
-.menu > li > a{
-	display: block;
-	padding: 15px 20px;
-	color: #fff;
-	text-decoration: none;
+/* Mostrar el submenú al pasar el ratón */
+.menu > li:hover .submenu {
+    display: block;
 }
 
-.menu li a:hover{
-	color: #FFC0CB;
-	transition: all .3s;
-}
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .menu {
+        display: none; /* Oculta el menú en pantallas pequeñas */
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+    }
 
-/* Submenu*/
+    .menu > li {
+        margin: 0;
+    }
 
-.submenu{
-	position: absolute;
-	background: #C71585;
-	width: 120%;
-	visibility: hidden;
-	opacity: 0;
-	transition: opacity 1.5s;
-	border-top-left-radius: 0;
-        border-top-right-radius: 0;
-        border-bottom-left-radius: 10px; /* Radio de borde inferior izquierdo */
-        border-bottom-right-radius: 10px; /* Radio de borde inferior derecho */
-}
+    .menu a {
+        padding: 15px;
+        display: block;
+    }
 
-.submenu li a{
-	display: block;
-	padding: 5px;
-	color: #fff;
-	text-decoration: centre;
-}
-
-.menu li:hover .submenu{
-	visibility: visible;
-	opacity: 1;
-}.navegacion{
-	
-	background-color:#C71585;
-	text-align: left;
-}
-
-.navegacion ul{
-	list-style: none;
-}
-
-
-.menu > li{
-	position: relative;
-	display: inline-block;
-}
-
-.menu > li > a{
-	display: block;
-	padding: 15px 20px;
-	color: #fff;
-	text-decoration: none;
-}
-
-.menu li a:hover{
-	color: #FFC0CB;
-	transition: all .3s;
-}
-
-/* Submenu*/
-
-.submenu{
-	position: absolute;
-	background: #C71585;
-	width: 120%;
-	visibility: hidden;
-	opacity: 0;
-	transition: opacity 1.5s;
-	border-top-left-radius: 0;
-        border-top-right-radius: 0;
-        border-bottom-left-radius: 10px; /* Radio de borde inferior izquierdo */
-        border-bottom-right-radius: 10px; /* Radio de borde inferior derecho */
-}
-
-.submenu li a{
-	display: block;
-	padding: 5px;
-	color: #fff;
-	text-decoration: centre;
-}
-
-.menu li:hover .submenu{
-	visibility: visible;
-	opacity: 1;
+    .menu.show {
+        display: flex; /* Muestra el menú cuando se activa */
+    }
 }
 /*productos*/
 .product {
