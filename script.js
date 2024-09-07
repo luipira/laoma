@@ -1,12 +1,12 @@
 let index = 0;
 
 function showSlide(n) {
-    const slides = document.querySelectorAll('.carousel-images img');
+    const slides = document.querySelectorAll('.carimages img');
     if (n >= slides.length) index = 0;
     if (n < 0) index = slides.length - 1;
     
     const offset = -index * 100;
-    document.querySelector('.carousel-images').style.transform = `translateX(${offset}%)`;
+    document.querySelector('.carimages').style.transform = `translateX(${offset}%)`;
 }
 
 function moveSlide(step) {
