@@ -129,11 +129,8 @@ footer {
     display: flex;
     width: 100%; /* Ocupa todo el ancho del contenedor */
     transition: transform 0.5s ease-in-out;
-}
+    height: auto; /* Mantiene la proporción de las imágenes */ 
 
-.carousel-images img {
-    width: 100%; /* Hace que cada imagen ocupe el 100% del ancho del contenedor del carrusel */
-    height: auto; /* Mantiene la proporción de las imágenes */
 }
 
 button {
