@@ -117,19 +117,19 @@ footer {
     text-align: center;
     padding: 0px;
 }
-/*carrusel*/
+/*carrusel
 .carousel {
     position: relative;
     width: 100%; /* Ocupa todo el ancho disponible */
-    max-width: 100%; /* Asegura que no se exceda el ancho del contenedor */
+    max-width: 100%; /* Asegura que no se exceda el ancho del contenedor 
     overflow: hidden;
 }
 
 .carousel-images {
     display: flex;
-    width: 100%; /* Ocupa todo el ancho del contenedor */
+    width: 100%; /* Ocupa todo el ancho del contenedor 
     transition: transform 0.5s ease-in-out;
-    height: auto; /* Mantiene la proporción de las imágenes */ 
+    height: auto; /* Mantiene la proporción de las imágenes 
 
 }
 
@@ -151,3 +151,4 @@ button {
 .next {
     right: 10px;
 }
+*/
