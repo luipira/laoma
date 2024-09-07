@@ -71,6 +71,32 @@ h1 {
 	color: red;
 	transition: all .3s;
 }
+/* Submenu*/
+
+.submenu{
+	position: absolute;
+	background: #C71585;
+	width: 120%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1.5s;
+	border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px; /* Radio de borde inferior izquierdo */
+        border-bottom-right-radius: 10px; /* Radio de borde inferior derecho */
+}
+
+.submenu li a{
+	display: block;
+	padding: 5px;
+	color: #fff;
+	text-decoration: centre;
+}
+
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
 /*productos*/
 .product {
 	display: flex;
