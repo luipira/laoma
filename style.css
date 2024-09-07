@@ -46,8 +46,8 @@ h1 {
 /*menu*/
 .navegacion{
 	
-	background-color:#C71585;
-	text-align: left;
+	background-color: black;
+	text-align: center;
 }
 
 .navegacion ul{
@@ -55,83 +55,21 @@ h1 {
 }
 
 
-.menu {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+.menu > li{
+	position: relative;
+	display: inline-block;
 }
 
-.menu > li {
-    position: relative; /* Asegura que el submenú se posicione relativo a su elemento padre */
-    margin-right: 20px;
+.menu > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: #fff;
+	text-decoration: none;
 }
 
-.menu a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px;
-}
-
-.menu a:hover {
-    background-color: #575757;
-}
-
-/* Estilos para el submenú */
-.submenu {
-    display: none; /* Oculta el submenú por defecto */
-    position: absolute; /* Posiciona el submenú en relación a su elemento padre */
-    top: 100%; /* Coloca el submenú debajo del elemento principal */
-    left: 0;
-    background-color: #333;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    z-index: 1000; /* Asegura que el submenú esté por encima de otros elementos */
-}
-
-.submenu li {
-    margin: 0;
-}
-
-.submenu a {
-    padding: 10px;
-    display: block;
-}
-
-.submenu a:hover {
-    background-color: #575757;
-}
-
-/* Mostrar el submenú al pasar el ratón */
-.menu > li:hover .submenu {
-    display: block;
-}
-
-/* Estilos para pantallas pequeñas */
-@media (max-width: 768px) {
-    .menu {
-        display: none; /* Oculta el menú en pantallas pequeñas */
-        flex-direction: column;
-        width: 100%;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        background-color: #333;
-    }
-
-    .menu > li {
-        margin: 0;
-    }
-
-    .menu a {
-        padding: 15px;
-        display: block;
-    }
-
-    .menu.show {
-        display: flex; /* Muestra el menú cuando se activa */
-    }
+.menu li a:hover{
+	color: red;
+	transition: all .3s;
 }
 /*productos*/
 .product {
