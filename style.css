@@ -98,7 +98,7 @@ h1 {
 	visibility: visible;
 	opacity: 1;
 }
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     .menu a {
         font-size: 14px; /* Tamaño de fuente reducido para pantallas más pequeñas */
     }
