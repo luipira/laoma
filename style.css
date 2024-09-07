@@ -120,19 +120,20 @@ footer {
 /*carrusel*/
 .carousel {
     position: relative;
-    max-width: 600px;
-    margin: auto;
+    width: 100%; /* Ocupa todo el ancho disponible */
+    max-width: 100%; /* Asegura que no se exceda el ancho del contenedor */
     overflow: hidden;
 }
 
 .carousel-images {
     display: flex;
+    width: 100%; /* Ocupa todo el ancho del contenedor */
     transition: transform 0.5s ease-in-out;
 }
 
 .carousel-images img {
-    width: 100%;
-    height: auto;
+    width: 100%; /* Hace que cada imagen ocupe el 100% del ancho del contenedor del carrusel */
+    height: auto; /* Mantiene la proporción de las imágenes */
 }
 
 button {
