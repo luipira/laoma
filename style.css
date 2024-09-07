@@ -47,7 +47,7 @@ h1 {
 .navegacion{
 	
 	background-color: black;
-	text-align: left;
+	text-align: center;
 }
 
 .navegacion ul{
@@ -97,6 +97,30 @@ h1 {
 .menu li:hover .submenu{
 	visibility: visible;
 	opacity: 1;
+}
+@media (max-width: 768px) {
+    .menu {
+        display: none; /* Oculta el menú en pantallas pequeñas */
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+    }
+
+    .menu > li {
+        margin: 0;
+    }
+
+    .menu a {
+        padding: 15px;
+        display: block;
+    }
+
+    .menu.show {
+        display: flex; /* Muestra el menú cuando se activa */
+    }
 }
 /*productos*/
 .product {
