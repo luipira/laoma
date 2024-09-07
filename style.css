@@ -99,8 +99,8 @@ h1 {
 	opacity: 1;
 }
 @media (max-width: 480px) {
-    .menu a {
-        font-size: 14px; /* Tamaño de fuente reducido para pantallas más pequeñas */
+    .menu {
+       text-align: center;
     }
 }
 
