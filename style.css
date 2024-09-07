@@ -99,27 +99,15 @@ h1 {
 	opacity: 1;
 }
 @media (max-width: 768px) {
-    .menu {
-        display: none; /* Oculta el menú en pantallas pequeñas */
-        flex-direction: column;
-        width: 100%;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        background-color: #333;
-    }
-
-    .menu > li {
-        margin: 0;
-    }
-
     .menu a {
-        padding: 15px;
-        display: block;
+        font-size: 14px; /* Tamaño de fuente reducido para pantallas más pequeñas */
     }
+}
 
-    .menu.show {
-        display: flex; /* Muestra el menú cuando se activa */
+/* Estilos para pantallas muy pequeñas (máximo de 480px) */
+@media (max-width: 480px) {
+    .menu a {
+        font-size: 12px; /* Tamaño de fuente aún más reducido para pantallas muy pequeñas */
     }
 }
 /*productos*/
