@@ -19,7 +19,7 @@ p {
 	color: #fff;
 }
 h1 {
-	color: black;
+	color: #fff;
 	text-align: center;
 }
 /*carro*/
@@ -92,6 +92,7 @@ h1 {
 	padding: 5px;
 	color: #fff;
 	text-decoration: left;
+	text-align: left;
 }
 
 .menu li:hover .submenu{
