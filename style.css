@@ -150,7 +150,7 @@ footer {
 }
 /*carrusel*/
 .carousel {
-    position: relative;
+    position: fixed;
     width: 100%; /* Ocupa todo el ancho disponible */
     max-width: 100%; /* Asegura que no se exceda el ancho del contenedor */
     overflow: hidden;
