@@ -150,20 +150,20 @@ footer {
 }
 /*carrusel*/
 .carousel {
-    position: fixed;
+    position: relative;
     width: 100%; /* Ocupa todo el ancho disponible */
-    max-width: 100%; /* Asegura que no se exceda el ancho del contenedor */
+    max-width: 600px; /* Asegura que no se exceda el ancho del contenedor */
     overflow: hidden;
     z-index: 1; /* Asegura que el carrusel esté debajo del menú y submenú */
+    margin: 0;
 }
 
 .carimages {
     display: flex;
-    width: 100%; /* Ocupa todo el ancho del contenedor */
     transition: transform 0.5s ease-in-out;
 }
 .inicio {
-    width: 100%; /* Hace que cada imagen ocupe el 100% del ancho del contenedor del carrusel */
+    width: 600px; /* Hace que cada imagen ocupe el 100% del ancho del contenedor del carrusel */
     height: auto; /* Mantiene la proporción de las imágenes */
 }
 
