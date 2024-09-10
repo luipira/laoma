@@ -127,6 +127,12 @@ span {
     color: #fff;
    padding: 20px;
 }
+.vercarrito {
+   background-color:red;
+   text-align: center;
+   color: #fff;
+   padding: 20px;
+}
 /*footer*/
 
 h5{
