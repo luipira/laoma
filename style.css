@@ -147,9 +147,11 @@ footer {
     background-color: red;
     text-align: center;
     padding: 0px;
+    z-index: 2;
 }
 /*carrusel*/
 .carousel {
+    text-align: center;
     position: relative;
     width: 100%; /* Ocupa todo el ancho disponible */
     max-width: 600px; /* Asegura que no se exceda el ancho del contenedor */
