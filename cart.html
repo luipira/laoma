@@ -104,14 +104,14 @@
         function finalizePurchase() {
             let cart = JSON.parse(localStorage.getItem('cart')) || [];
             let totalPrice = 0;
-            let cartMessage = 'Hola%2C%20este%20es%20mi%20pedido%3A%20'; // Mensaje inicial fijo
+            let cartMessage = 'Hola este es mi pedido: '; // Mensaje inicial fijo
 
             cart.forEach(item => {
-                cartMessage += `${item.name}%20Qty%3A%20${item.quantity}%2C%20`;
+                cartMessage += `${item.name}-${item.quantity},`;
                 totalPrice += item.price * item.quantity;
             });
 
-            cartMessage += `%20Total%3A%20$${totalPrice.toFixed(2)}`;
+            cartMessage += `. El total es: ${totalPrice.toFixed(2)}`;
             let encodedMessage = encodeURIComponent(cartMessage);
             let phoneNumber = "3498459560"; // Reemplaza con tu número de WhatsApp sin signos + o espacios
             let whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
