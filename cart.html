@@ -20,11 +20,15 @@
         .cart-item span {
             display: inline-block;
             width: 200px;
-            color: #fff
+            color: #fff;
         }
 
         .cart-item button {
             margin-left: 10px;
+        }
+
+        #deliveryDetails {
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -66,11 +70,65 @@
         <h1>Carrito de Compras</h1>
         <div id="cart-items"></div>
         <h3>Total: $<span id="total-price">0</span></h3>
-        <button onclick="finalizePurchase()">Finalizar Compra</button>
+
+        <!-- Formulario para seleccionar el tipo de servicio -->
+        <form id="orderForm">
+            <label for="serviceType">¿Cómo quieres recibir tu pedido?</label>
+            <select id="serviceType" name="serviceType" required>
+                <option value="dineIn">Comer en el bar</option>
+                <option value="delivery">Delivery</option>
+            </select>
+
+            <div id="deliveryDetails" style="display: none;">
+                <label for="address">Dirección de entrega:</label>
+                <input type="text" id="address" name="address" placeholder="Ingrese su dirección" />
+            </div>
+
+            <button type="submit" class="btn btn-primary">Finalizar Compra</button>
+        </form>
+
         <a href="index.html" class="btn btn-secondary">Volver a la tienda</a>
     </div>
 
     <script>
+        document.getElementById('serviceType').addEventListener('change', function () {
+            const deliveryDetails = document.getElementById('deliveryDetails');
+            deliveryDetails.style.display = this.value === 'delivery' ? 'block' : 'none';
+        });
+
+        document.getElementById('orderForm').addEventListener('submit', function (e) {
+            e.preventDefault(); // Evita el envío del formulario
+
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            let totalPrice = 0;
+            let cartMessage = 'Hola Oma Resto Bar, este es mi pedido:\n';
+            let serviceType = document.getElementById('serviceType').value;
+            let address = serviceType === 'delivery' ? document.getElementById('address').value : '';
+
+            cart.forEach(item => {
+                cartMessage += `${item.quantity} - ${item.name},\n`;
+                totalPrice += item.price * item.quantity;
+            });
+
+            cartMessage += `El total es: $${totalPrice.toFixed(2)}\n`;
+            if (serviceType === 'delivery') {
+                cartMessage += `Dirección de entrega: ${address}`;
+            } else {
+                cartMessage += `Tipo de servicio: Comer en el bar`;
+            }
+
+            let encodedMessage = encodeURIComponent(cartMessage);
+            let phoneNumber = "3498459560"; // Reemplaza con tu número de WhatsApp sin signos + o espacios
+            let whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+
+            // Redirigir al usuario a WhatsApp
+            window.open(whatsappUrl, '_blank');
+
+            // Limpiar el carrito y recargar
+            localStorage.removeItem('cart');
+            loadCart();
+        });
+
         function loadCart() {
             let cart = JSON.parse(localStorage.getItem('cart')) || [];
             let cartItemsDiv = document.getElementById('cart-items');
@@ -98,29 +156,6 @@
             let cart = JSON.parse(localStorage.getItem('cart')) || [];
             cart = cart.filter(item => item.name !== name);
             localStorage.setItem('cart', JSON.stringify(cart));
-            loadCart();
-        }
-
-        function finalizePurchase() {
-            let cart = JSON.parse(localStorage.getItem('cart')) || [];
-            let totalPrice = 0;
-            let cartMessage = 'Hola Oma Resto Bar este es mi pedido: '; // Mensaje inicial fijo
-
-            cart.forEach(item => {
-                cartMessage += `${item.quantity} - ${item.name},`;
-                totalPrice += item.price * item.quantity;
-            });
-
-            cartMessage += ` el total es: ${totalPrice.toFixed(2)}`;
-            let encodedMessage = encodeURIComponent(cartMessage);
-            let phoneNumber = "3498459560"; // Reemplaza con tu número de WhatsApp sin signos + o espacios
-            let whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
-
-            // Redirigir al usuario a WhatsApp
-            window.open(whatsappUrl, '_blank');
-
-            // Limpiar el carrito y recargar
-            localStorage.removeItem('cart');
             loadCart();
         }
 
