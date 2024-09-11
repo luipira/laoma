@@ -104,7 +104,7 @@
         function finalizePurchase() {
             let cart = JSON.parse(localStorage.getItem('cart')) || [];
             let totalPrice = 0;
-            let cartMessage = 'Hola%2C%20quiero%20comprar%20estos%20productos%3A%20';
+            let cartMessage = 'Hola%2C%20este%20es%20mi%20pedido%3A%20'; // Mensaje inicial fijo
 
             cart.forEach(item => {
                 cartMessage += `${item.name}%20Qty%3A%20${item.quantity}%2C%20`;
