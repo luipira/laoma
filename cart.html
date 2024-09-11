@@ -104,14 +104,14 @@
         function finalizePurchase() {
             let cart = JSON.parse(localStorage.getItem('cart')) || [];
             let totalPrice = 0;
-            let cartMessage = 'Hola este es mi pedido: '; // Mensaje inicial fijo
+            let cartMessage = 'Hola Oma Resto Bar este es mi pedido: '; // Mensaje inicial fijo
 
             cart.forEach(item => {
-                cartMessage += `${item.name}-${item.quantity},`;
+                cartMessage += `${item.quantity} - ${item.name},`;
                 totalPrice += item.price * item.quantity;
             });
 
-            cartMessage += `. El total es: ${totalPrice.toFixed(2)}`;
+            cartMessage += ` el total es: ${totalPrice.toFixed(2)}`;
             let encodedMessage = encodeURIComponent(cartMessage);
             let phoneNumber = "3498459560"; // Reemplaza con tu número de WhatsApp sin signos + o espacios
             let whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
