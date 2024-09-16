@@ -2,17 +2,17 @@
 <html lang="en">
 
 <head>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<link rel="stylesheet" href="style.css">
-<link rel="icon" href="logofondoins.png">
-<title>La Oma - Resto Bar</title>
-	<style>
-         .product {
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logofondoins.png">
+    <title>La Oma - Resto Bar</title>
+    <style>
+        .product {
             margin-bottom: 15px;
             display: flex;
             align-items: center;
@@ -37,27 +37,33 @@
 </head>
 
 <body>
-	
-   
-    <header>
-    <div  class="carro">
-	    <a  href="cart.html">
-	    <img  src="vectorcarrito.png" alt="Carrito" width="30" >
-	    </a>
-    </div>
-  <br>
 
-    <div class= "centrarlogo">
-        <img class= "logo"  src="logolaoma.png" width="100" alt="Logo de Mi Tienda">
-    </div>
+    <header>
+        <div class="carro">
+            <a href="cart.html">
+                <img src="vectorcarrito.png" alt="Carrito" width="30">
+            </a>
+        </div>
+        <br>
+
+        <div class="centrarlogo">
+            <img class="logo" src="logolaoma.png" width="100" alt="Logo de Mi Tienda">
+        </div>
     </header>
-    
-	<br>
-  		<nav class="navegacion">
-			<ul class="menu">
+
+    <br>
+    <nav class="navegacion">
+       <ul class="menu">
 				<li><a href="index.html">INICIO</a></li>
-				<li><a href="Bebidas.html">BEBIDAS</a></li>
-				<li><a href="Postres.html">POSTRES</a></li>
+				<li><a href="Bebidas.html">BEBIDAS</a>
+				  <ul class="submenu">
+				    <li><a href="Cervezas.html">CERVEZAS</a></li>
+			             <li><a href="Gaseosas.html">GASEOSAS</a></li>
+			            <li><a href="Vinos.html">VINOS</a></li>
+			            <li><a href="Aguas.html">AGUAS</a></li>
+			            <li><a href="Tragos.html">TRAGOS</a></li>
+				  </ul>
+				</li>
 				<li><a href=#>GASTRONOMIA</a>
 				   <ul class="submenu">
 				    <li><a href="Entradas.html">ENTRADAS</a></li>
@@ -67,61 +73,42 @@
 			            <li><a href="Pizzas.html">PIZZAS</a></li>
 				    <li><a href="Sandwiches.html">SANDWICHES</a></li>
 				     <li><a href="Pastas.html">PASTAS</a></li>	
+				    <li><a href="Postres.html">POSTRES</a></li>	
 				  </ul>
 				</li>
-				
+				<li><a href="Promos.html">PROMOS</a></li>
 			</ul>
-			
-		</nav>
+    </nav>
 
-<h1>Al Plato</h1>
+    <h1>Tragos</h1>
 
     <div id="product-list">
         <div class="product">
-            <span>Milanesa Simple con Guarnición - $10</span>
-	     <input type="number" class="product-quantity" min="1" value="1">
-            <button onclick="addToCart('Milanesa Simple con Guarnición', 10)">Agregar al carrito</button>
+            <span>Fernet - $4500</span>
+            <input type="number" class="product-quantity" min="1" value="1">
+            <button onclick="addToCart('Fernet', 4500, this.parentElement.querySelector('.product-quantity').value)">Agregar al carrito</button>
         </div>
         <div class="product">
-            <span>Milanesa a la Pizza con Guarnición - $20</span>
-	     <input type="number" class="product-quantity" min="1" value="1">
-            <button onclick="addToCart('Milanesa a la Pizza con Guarnición', 20)">Agregar al carrito</button>
-        </div>
-	<div class="product">
-            <span>Milanesa a Caballo con Guarnición - $20</span>
-	     <input type="number" class="product-quantity" min="1" value="1">
-            <button onclick="addToCart('Milanesa a Caballo con Guarnición', 20)">Agregar al carrito</button>
-        </div>
-	<div class="product">
-            <span>Costeleta Simple con Guarnición - $20</span>
-	     <input type="number" class="product-quantity" min="1" value="1">
-            <button onclick="addToCart('Costeleta Simple con Guarnición', 20)">Agregar al carrito</button>
-        </div>
-	<div class="product">
-            <span>Costeleta a Caballo con Guarnición - $20</span>
-	     <input type="number" class="product-quantity" min="1" value="1">
-            <button onclick="addToCart('Costeleta a Caballo con Guarnición', 20)">Agregar al carrito</button>
-        </div>
-	<div class="product">
-            <span>Milanesa de pollo con Guarnición - $20</span>
-	     <input type="number" class="product-quantity" min="1" value="1">
-            <button onclick="addToCart('Milanesa de pollo con Guarnición', 20)">Agregar al carrito</button>
+            <span>Gancia - $4000</span>
+            <input type="number" class="product-quantity" min="1" value="1">
+            <button onclick="addToCart('Gancia', 4000, this.parentElement.querySelector('.product-quantity').value)">Agregar al carrito</button>
         </div>
     </div>
-	<br>
+    <br>
     <a class="vercarrito" href="cart.html">Ver carrito</a>
-	<br>
-	<br>
+    <br>
+    <br>
 
     <script>
-        function addToCart(name, price) {
+        function addToCart(name, price, quantity) {
+            quantity = parseInt(quantity); // Asegurarse de que la cantidad sea un número entero
             let cart = JSON.parse(localStorage.getItem('cart')) || [];
             let item = cart.find(item => item.name === name);
 
             if (item) {
-                item.quantity += 1;
+                item.quantity += quantity;
             } else {
-                cart.push({ name, price, quantity: 1 });
+                cart.push({ name, price, quantity });
             }
 
             localStorage.setItem('cart', JSON.stringify(cart));
@@ -130,13 +117,14 @@
             alert('Producto agregado al carrito');
         }
     </script>
-	<br>
-	<br>
+    <br>
+    <br>
 </body>
-<br>
-  <footer>
+
+<footer>
     <div class="divh5">
-        <h5> La Oma | Nuestro Whatsapp 3498-402212   </h5>
-      </div>
-  </footer>
+        <h5>La Oma | Nuestro Whatsapp 3498-402212</h5>
+    </div>
+</footer>
+
 </html>
