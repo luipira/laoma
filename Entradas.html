@@ -53,22 +53,31 @@
 
     <br>
     <nav class="navegacion">
-        <ul class="menu">
-            <li><a href="index.html">INICIO</a></li>
-            <li><a href="Bebidas.html">BEBIDAS</a></li>
-            <li><a href="Postres.html">POSTRES</a></li>
-            <li><a href="#">GASTRONOMIA</a>
-                <ul class="submenu">
-                    <li><a href="Entradas.html">ENTRADAS</a></li>
-                    <li><a href="AlPlato.html">AL PLATO</a></li>
-                    <li><a href="Hamburguesas.html">HAMBURGUESAS</a></li>
-                    <li><a href="Tablas.html">TABLAS</a></li>
-                    <li><a href="Pizzas.html">PIZZAS</a></li>
-                    <li><a href="Sandwiches.html">SANDWICHES</a></li>
-                    <li><a href="Pastas.html">PASTAS</a></li>
-                </ul>
-            </li>
-        </ul>
+       <ul class="menu">
+				<li><a href="index.html">INICIO</a></li>
+				<li><a href="Bebidas.html">BEBIDAS</a>
+				  <ul class="submenu">
+				    <li><a href="Cervezas.html">CERVEZAS</a></li>
+			             <li><a href="Gaseosas.html">GASEOSAS</a></li>
+			            <li><a href="Vinos.html">VINOS</a></li>
+			            <li><a href="Aguas.html">AGUAS</a></li>
+			            <li><a href="Tragos.html">TRAGOS</a></li>
+				  </ul>
+				</li>
+				<li><a href=#>GASTRONOMIA</a>
+				   <ul class="submenu">
+				    <li><a href="Entradas.html">ENTRADAS</a></li>
+			             <li><a href="AlPlato.html">AL PLATO</a></li>
+			            <li><a href="Hamburguesas.html">HAMBURGUESAS</a></li>
+			            <li><a href="Tablas.html">TABLAS</a></li>
+			            <li><a href="Pizzas.html">PIZZAS</a></li>
+				    <li><a href="Sandwiches.html">SANDWICHES</a></li>
+				     <li><a href="Pastas.html">PASTAS</a></li>	
+				    <li><a href="Postres.html">POSTRES</a></li>	
+				  </ul>
+				</li>
+				<li><a href="Promos.html">PROMOS</a></li>
+			</ul>
     </nav>
 
     <h1>Entradas</h1>
@@ -76,35 +85,35 @@
     <div id="product-list">
         <div class="product">
             <img class="imagen" src="1.png" alt="Papas Fritas">
-            <span>Papas Fritas - $1.000</span>
+            <span>Papas Fritas - $4000</span>
             <input type="number" class="product-quantity" min="1" value="1">
-            <button onclick="addToCart('Papas Fritas', 1000, this.parentElement.querySelector('.product-quantity').value)">Agregar al carrito</button>
+            <button onclick="addToCart('Papas Fritas', 4000, this.parentElement.querySelector('.product-quantity').value)">Agregar al carrito</button>
         </div>
         <div class="product">
-            <span>Papas Fritas con Cheddar - $2.000</span>
+            <span>Papas Fritas con Cheddar - $4500</span>
             <input type="number" class="product-quantity" min="1" value="1">
-            <button onclick="addToCart('Papas Fritas con Cheddar', 2000, this.parentElement.querySelector('.product-quantity').value)">Agregar al carrito</button>
+            <button onclick="addToCart('Papas Fritas con Cheddar', 4500, this.parentElement.querySelector('.product-quantity').value)">Agregar al carrito</button>
         </div>
         <div class="product">
             <img class="imagen" src="4.png" alt="Empanadas de Carne">
-            <span>Empanadas de Carne - $1.200</span>
+            <span>Empanadas de Carne - $600</span>
             <input type="number" class="product-quantity" min="1" value="1">
-            <button onclick="addToCart('Empanadas de Carne', 1200, this.parentElement.querySelector('.product-quantity').value)">Agregar al carrito</button>
+            <button onclick="addToCart('Empanadas de Carne', 600, this.parentElement.querySelector('.product-quantity').value)">Agregar al carrito</button>
         </div>
         <div class="product">
-            <span>Empanadas de Jamon y Queso - $1.200</span>
+            <span>Empanadas de Jamon y Queso - $600</span>
             <input type="number" class="product-quantity" min="1" value="1">
-            <button onclick="addToCart('Empanadas de Jamon y Queso', 1200, this.parentElement.querySelector('.product-quantity').value)">Agregar al carrito</button>
+            <button onclick="addToCart('Empanadas de Jamon y Queso', 600, this.parentElement.querySelector('.product-quantity').value)">Agregar al carrito</button>
         </div>
         <div class="product">
-            <span>Cazuela de Salchicha - $2.000</span>
+            <span>Cazuela de Salchicha - $1500</span>
             <input type="number" class="product-quantity" min="1" value="1">
-            <button onclick="addToCart('Cazuela de Salchicha', 2000, this.parentElement.querySelector('.product-quantity').value)">Agregar al carrito</button>
+            <button onclick="addToCart('Cazuela de Salchicha', 1500, this.parentElement.querySelector('.product-quantity').value)">Agregar al carrito</button>
         </div>
         <div class="product">
-            <span>Cazuela de Mondongo - $2.000</span>
+            <span>Cazuela de Mondongo - $1500</span>
             <input type="number" class="product-quantity" min="1" value="1">
-            <button onclick="addToCart('Cazuela de Mondongo', 2000, this.parentElement.querySelector('.product-quantity').value)">Agregar al carrito</button>
+            <button onclick="addToCart('Cazuela de Mondongo', 1500, this.parentElement.querySelector('.product-quantity').value)">Agregar al carrito</button>
         </div>
     </div>
     <br>
