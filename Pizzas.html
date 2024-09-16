@@ -37,8 +37,15 @@
   		<nav class="navegacion">
 			<ul class="menu">
 				<li><a href="index.html">INICIO</a></li>
-				<li><a href="Bebidas.html">BEBIDAS</a></li>
-				<li><a href="Postres.html">POSTRES</a></li>
+				<li><a href="Bebidas.html">BEBIDAS</a>
+				  <ul class="submenu">
+				    <li><a href="Cervezas.html">CERVEZAS</a></li>
+			             <li><a href="Gaseosas.html">GASEOSAS</a></li>
+			            <li><a href="Vinos.html">VINOS</a></li>
+			            <li><a href="Aguas.html">AGUAS</a></li>
+			            <li><a href="Tragos.html">TRAGOS</a></li>
+				  </ul>
+				</li>
 				<li><a href=#>GASTRONOMIA</a>
 				   <ul class="submenu">
 				    <li><a href="Entradas.html">ENTRADAS</a></li>
@@ -47,10 +54,11 @@
 			            <li><a href="Tablas.html">TABLAS</a></li>
 			            <li><a href="Pizzas.html">PIZZAS</a></li>
 				    <li><a href="Sandwiches.html">SANDWICHES</a></li>
-				    <li><a href="Pastas.html">PASTAS</a></li>	
+				     <li><a href="Pastas.html">PASTAS</a></li>	
+				    <li><a href="Postres.html">POSTRES</a></li>	
 				  </ul>
 				</li>
-				
+				<li><a href="Promos.html">PROMOS</a></li>
 			</ul>
 			
 		</nav>
@@ -59,28 +67,64 @@
 
     <div id="product-list">
         <div class="product">
-            <span>Pizza Comun - $10</span>
-            <button onclick="addToCart('Pizza Comun', 10)">Agregar al carrito</button>
+            <span>Pizza Comun - $6000</span>
+	    <input type="number" class="product-quantity" min="1" value="1">
+            <button onclick="addToCart('Pizza Comun', 6000, this.parentElement.querySelector('.product-quantity').value)">Agregar al carrito</button>
         </div>
 	<div class="product">
-            <span>Pizza con Rúcula - $10</span>
-            <button onclick="addToCart('Pizza con Rúcula', 10)">Agregar al carrito</button>
+            <span>Pizza Comun 1/2 - $3800</span>
+	    <input type="number" class="product-quantity" min="1" value="1">
+            <button onclick="addToCart('Pizza Comun 1/2', 3800, this.parentElement.querySelector('.product-quantity').value)">Agregar al carrito</button>
         </div>
 	<div class="product">
-            <span>Pizza Especial - $10</span>
-            <button onclick="addToCart('Pizza Especial', 10)">Agregar al carrito</button>
+            <span>Pizza con Rúcula - $5500</span>
+	    <input type="number" class="product-quantity" min="1" value="1">
+            <button onclick="addToCart('Pizza con Rúcula', 5500, this.parentElement.querySelector('.product-quantity').value)">Agregar al carrito</button>
         </div>
 	<div class="product">
-            <span>Pizza a Caballo - $10</span>
-            <button onclick="addToCart('Pizza a Caballo', 10)">Agregar al carrito</button>
+            <span>Pizza con Rúcula 1/2 - $3000</span>
+	    <input type="number" class="product-quantity" min="1" value="1">
+            <button onclick="addToCart('Pizza con Rúcula 1/2', 3000, this.parentElement.querySelector('.product-quantity').value)">Agregar al carrito</button>
         </div>
 	<div class="product">
-            <span>Pizza Nevada - $10</span>
-            <button onclick="addToCart('Pizza Nevada', 10)">Agregar al carrito</button>
+            <span>Pizza Especial - $7000</span>
+	    <input type="number" class="product-quantity" min="1" value="1">
+            <button onclick="addToCart('Pizza Especial', 7000, this.parentElement.querySelector('.product-quantity').value)">Agregar al carrito</button>
+        </div>
+	<div class="product">
+            <span>Pizza Especial 1/2 - $3800</span>
+	    <input type="number" class="product-quantity" min="1" value="1">
+            <button onclick="addToCart('Pizza Especial 1/2', 3800, this.parentElement.querySelector('.product-quantity').value)">Agregar al carrito</button>
+        </div>
+	<div class="product">
+            <span>Pizza a Caballo - $7000</span>
+	    <input type="number" class="product-quantity" min="1" value="1">
+            <button onclick="addToCart('Pizza a Caballo', 7000, this.parentElement.querySelector('.product-quantity').value)">Agregar al carrito</button>
+        </div>
+	<div class="product">
+            <span>Pizza a Caballo 1/2 - $3800</span>
+	    <input type="number" class="product-quantity" min="1" value="1">
+            <button onclick="addToCart('Pizza a Caballo 1/2', 3800, this.parentElement.querySelector('.product-quantity').value)">Agregar al carrito</button>
+        </div>
+	<div class="product">
+            <span>Pizza Nevada - $6500</span>
+	    <input type="number" class="product-quantity" min="1" value="1">
+            <button onclick="addToCart('Pizza Nevada', 6500, this.parentElement.querySelector('.product-quantity').value)">Agregar al carrito</button>
+        </div>
+	<div class="product">
+            <span>Pizza Nevada 1/2 - $3400</span>
+	    <input type="number" class="product-quantity" min="1" value="1">
+            <button onclick="addToCart('Pizza Nevada 1/2', 3400, this.parentElement.querySelector('.product-quantity').value)">Agregar al carrito</button>
         </div>
 	    <div class="product">
-            <span>Pizza Napolitana - $10</span>
-            <button onclick="addToCart('Pizza Napolitana', 10)">Agregar al carrito</button>
+            <span>Pizza Napolitana - $7000</span>
+	    <input type="number" class="product-quantity" min="1" value="1">
+            <button onclick="addToCart('Pizza Napolitana', 7000, this.parentElement.querySelector('.product-quantity').value)">Agregar al carrito</button>
+        </div>
+	      <div class="product">
+            <span>Pizza Napolitana 1/2 - $3800</span>
+	    <input type="number" class="product-quantity" min="1" value="1">
+            <button onclick="addToCart('Pizza Napolitana 1/2', 3800, this.parentElement.querySelector('.product-quantity').value)">Agregar al carrito</button>
         </div>
     </div>
 	<br>
