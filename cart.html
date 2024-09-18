@@ -27,8 +27,10 @@
             margin-left: 10px;
         }
 
-        #deliveryDetails {
+        #deliveryDetails,
+        #tableNumber {
             margin-top: 10px;
+            display: none;
         }
     </style>
 </head>
@@ -49,18 +51,29 @@
     <br>
     <nav class="navegacion">
         <ul class="menu">
-            <li><a href="index.html">INICIO</a></li>
-            <li><a href="Bebidas.html">BEBIDAS</a></li>
-            <li><a href="Postres.html">POSTRES</a></li>
-            <li><a href="#">GASTRONOMIA</a>
-                <ul class="submenu">
-                    <li><a href="Entradas.html">ENTRADAS</a></li>
-                    <li><a href="AlPlato.html">AL PLATO</a></li>
-                    <li><a href="Hamburguesas.html">HAMBURGUESAS</a></li>
-                    <li><a href="Tablas.html">TABLAS</a></li>
-                    <li><a href="Pizzas.html">PIZZAS</a></li>
-                    <li><a href="Sandwiches.html">SANDWICHES</a></li>
-                    <li><a href="Pastas.html">PASTAS</a></li>
+           <li><a href="index.html">INICIO</a></li>
+				<li><a href=#>BEBIDAS</a>
+				  <ul class="submenu">
+				    <li><a href="Cervezas.html">CERVEZAS</a></li>
+			             <li><a href="Gaseosas.html">GASEOSAS</a></li>
+			            <li><a href="Vinos.html">VINOS</a></li>
+			            <li><a href="Aguas.html">AGUAS</a></li>
+			            <li><a href="Tragos.html">TRAGOS</a></li>
+				  </ul>
+				</li>
+				<li><a href=#>GASTRONOMIA</a>
+				   <ul class="submenu">
+				    <li><a href="Entradas.html">ENTRADAS</a></li>
+			             <li><a href="AlPlato.html">AL PLATO</a></li>
+			            <li><a href="Hamburguesas.html">HAMBURGUESAS</a></li>
+			            <li><a href="Tablas.html">TABLAS</a></li>
+			            <li><a href="Pizzas.html">PIZZAS</a></li>
+				    <li><a href="Sandwiches.html">SANDWICHES</a></li>
+				     <li><a href="Pastas.html">PASTAS</a></li>	
+				    <li><a href="Postres.html">POSTRES</a></li>	
+				  </ul>
+				</li>
+				<li><a href="Promos.html">PROMOS</a></li>
                 </ul>
             </li>
         </ul>
@@ -77,9 +90,15 @@
             <select id="serviceType" name="serviceType" required>
                 <option value="dineIn">Comer en el bar</option>
                 <option value="delivery">Delivery</option>
+                <option value="takeAway">Comida para llevar</option>
             </select>
 
-            <div id="deliveryDetails" style="display: none;">
+            <div id="tableNumber">
+                <label for="table">Número de mesa:</label>
+                <input type="text" id="table" name="table" placeholder="Ingrese su número de mesa" />
+            </div>
+
+            <div id="deliveryDetails">
                 <label for="address">Dirección de entrega:</label>
                 <input type="text" id="address" name="address" placeholder="Ingrese su dirección" />
             </div>
@@ -93,7 +112,18 @@
     <script>
         document.getElementById('serviceType').addEventListener('change', function () {
             const deliveryDetails = document.getElementById('deliveryDetails');
-            deliveryDetails.style.display = this.value === 'delivery' ? 'block' : 'none';
+            const tableNumber = document.getElementById('tableNumber');
+
+            if (this.value === 'delivery') {
+                deliveryDetails.style.display = 'block';
+                tableNumber.style.display = 'none';
+            } else if (this.value === 'dineIn') {
+                deliveryDetails.style.display = 'none';
+                tableNumber.style.display = 'block';
+            } else {
+                deliveryDetails.style.display = 'none';
+                tableNumber.style.display = 'none';
+            }
         });
 
         document.getElementById('orderForm').addEventListener('submit', function (e) {
@@ -104,6 +134,7 @@
             let cartMessage = 'Hola Oma Resto Bar, este es mi pedido:\n';
             let serviceType = document.getElementById('serviceType').value;
             let address = serviceType === 'delivery' ? document.getElementById('address').value : '';
+            let table = serviceType === 'dineIn' ? document.getElementById('table').value : '';
 
             cart.forEach(item => {
                 cartMessage += `${item.quantity} - ${item.name},\n`;
@@ -113,8 +144,10 @@
             cartMessage += `El total es: $${totalPrice.toFixed(2)}\n`;
             if (serviceType === 'delivery') {
                 cartMessage += `Dirección de entrega: ${address}`;
+            } else if (serviceType === 'dineIn') {
+                cartMessage += `Número de mesa: ${table}`;
             } else {
-                cartMessage += `Tipo de servicio: Comer en el bar`;
+                cartMessage += `Tipo de servicio: Comida para llevar`;
             }
 
             let encodedMessage = encodeURIComponent(cartMessage);
