@@ -99,6 +99,11 @@ h1 {
 	visibility: visible;
 	opacity: 1;
 }
+/*delivery*/
+.delivery{
+	text-align: center;
+	width: 100%;
+}
 
 /*productos*/
 .product {
